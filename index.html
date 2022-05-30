@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV to treeGrid</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form" class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="cols col-2">
+            <input
+              class="btn w-100 btn-primary"
+              type="submit"
+              id="btnSubmit"
+              value="نمایش درختی"
+            />
+          </div>
+          <div class="cols col-10">
+            <input
+              type="file"
+              id="csvFile"
+              name="csvFile"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="container">
+      <table
+        id="table"
+        class="table table-bordered table-hover table-responsive"
+        style="width: 100%"
+      ></table>
+    </div>
+    <div class="container">
+      <button class="btn btn-primary w-100" style="display: none" id="reload">
+        ارسال مجدد
+      </button>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/dataTables.treeGrid.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

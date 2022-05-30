@@ -1,0 +1,17 @@
+.table thead {
+  background-color: #757575;
+  color: white;
+}
+
+.table td {
+  line-height: 1.5rem;
+}
+
+.table tbody tr:nth-of-type(2n) {
+  background-color: #eeeeee;
+}
+
+td.treegrid-control,
+td.treegrid-control-open {
+  font-size: 1.6rem;
+}
